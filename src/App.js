@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import http from "./http"
 
-function App() {
+async function App() {
+  const res = await http({
+    url:``,
+    method:"get",
+  })
+  console.log(res,9999)
   return (
     <div className="App">
       <header className="App-header">
